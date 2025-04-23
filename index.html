@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="navbar">
+  <navbar class="navbar">
     <div class="navCont">
       <p class="navLogo">My Logo</p>
       <div class="navBut">
@@ -16,7 +16,7 @@
         <button class="navButton">Contact</button>
       </div>
     </div>
-  </div>
+  </navbar>
 
   <div class="header">
     <div class="headerContent">
@@ -42,7 +42,7 @@
         <img src="backgrounds/Snapshoot Portfolio.svg" alt="">
       </div>
       <div class="projCont">
-        <div class="tonicCont">
+        <div classtele="tonicCont">
           <p class="tonicTitle">Tonic</p>
           <div class="canopyCont">
             <P class="canopy">CANOPY</P>
@@ -151,30 +151,62 @@
         <p class="infoContent">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
         <p class="infoLink">LET'S CONNECT</p>
         <div class="socials">
-          <img src="icons/twitter.svg" alt="Twitter">
-          <img src="icons/Linkedin icon.svg" alt="Linkedin">
-          <img src="icons/medium.svg" alt="Medium">
           <img src="icons/github.svg" alt="Github">
-          <img src="icons\angellist.svg" alt="AngelList">
+          <img src="icons/Linkedin icon.svg" alt="Linkedin">
+          <img src="icons/angellist.svg" alt="AngelList">
+          <img src="icons/twitter.svg" alt="Twitter">
+          <img src="icons/medium.svg" alt="Medium">
         </div>
-        <button>Get my resume </button>
+        <button class="resume">Get my resume </button>
       </div>
       <div class="skillList">
-        <div>
-          <p>Languages</p>
-          <img src="icons/Icon - Chevron - Down - Larger.svg" alt="">
-        </div>
-        <div>
-          <p>Frameworks</p>
-          <img src="icons/Icon - Chevron - Right - Larger.svg" alt="">
-        </div>
-        <div>
-          <p>Skills</p>
-          <img src="icons/Icon - Chevron - Right - Larger.svg" alt="">
+        <div class="skillCont">
+          <div class="skillSection">
+            <p class="skillTitle">Languages</p>
+            <img src="icons/Icon - Chevron - Down - Larger.svg" alt="">
+          </div>
+          <div class="skillTiles">
+            <div class="skillTile">
+              <img src="icons/Ellipse 1.svg" class="jsIcon">
+              <p class="iconDes">JavaScript</p>
+            </div>
+            <div class="skillTile">
+              <img src="icons/Ellipse 2.svg" class="htmlIcon">
+              <p class="iconDes">HTML</p>
+            </div>
+            <div class="skillTile">
+              <img src="icons/Ellipse 3.svg" class="cssIcon">
+              <p class="iconDes">CSS</p>
+            </div>
+          </div>
+          <div class="skillSection">
+            <p class="skillTitle">Frameworks</p>
+            <img src="icons/Icon - Chevron - Right - Larger.svg" alt="">
+          </div>
+          <div class="separator"></div>
+          <div class="skillSection">
+            <p class="skillTitle">Skills</p>
+            <img src="icons/Icon - Chevron - Right - Larger.svg" alt="">
+          </div>
+          <div class="separator"></div>
         </div>
       </div>
     </div>
   </div>
 
+  <div style="background-color: white;">
+  <div class="contactMe">
+      <div class="contactCont">
+        <p class="contactTitle">Contact me</p>
+        <p class="contactContent">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
+        <form class="contactForm">
+          <input type="text" name="" id="" placeholder="Full Name">
+          <input type="text" name="" id="" placeholder="Email">
+          <textarea class="description" name="w3review" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+          <button class="contactButton">Get in touch</button>
+        </form>
+      </div>
+    </div>
+</div>
 </body>
 </html>
