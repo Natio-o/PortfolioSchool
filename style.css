@@ -26,9 +26,12 @@ body{
 
 .navCont {
   display: flex;
-  gap: 796px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navBut {
@@ -582,4 +585,249 @@ input:focus, textarea:focus{
 
 .contactButton:active{
   background: #2230D2;
+}
+
+/* modals */
+body.modal-open {
+  overflow: hidden;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 0;
+}
+
+
+.modal-content {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.large-modal {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #000;
+}
+
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #091E42;
+}
+.modal-meta {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #6B778C;
+  padding: 0;
+  margin: 0;
+}
+
+
+.modal-image {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+
+.modal-body p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #344563;
+}
+
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0;
+}
+.modal-tags span {
+  background-color: #EBEBFF;
+  color: #6070FF;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.modal-btn {
+  background-color: white;
+  color: #396DF2;
+  border: 1px solid #6070FF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.modal-btn:hover {
+  background-color: #6070FF;
+  color: white;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+
+  .navCont {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navBut {
+    flex-direction: column;
+    gap: 8px;
+    height: auto;
+  }
+
+  .header {
+    height: auto;
+    padding: 40px 20px;
+    border-bottom-left-radius: 80px;
+    background-size: cover;
+  }
+
+  .headerContent {
+    width: 100%;
+  }
+
+  .headerH1content {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .headerBody {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .project {
+    height: auto;
+    padding: 0 12px;
+  }
+
+  .tonic,
+  .stories,
+  .facebook,
+  .uber {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+
+  .projImg,
+  .projCont {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .aboutMe {
+    height: auto;
+    padding: 40px 20px;
+    border-top-right-radius: 80px;
+  }
+
+  .infoCont {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutInfo,
+  .skillList {
+    width: 100%;
+    height: auto;
+  }
+
+  .contactMe {
+    height: auto;
+    padding: 40px 20px;
+    border-top-left-radius: 80px;
+  }
+
+  .contactCont {
+    width: 100%;
+    height: auto;
+  }
+
+  .contactContent,
+  .contactForm input,
+  .description {
+    width: 100%;
+  }
+
+  .skillTiles {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .skillTile {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
 }

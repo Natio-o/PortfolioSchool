@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="navbar.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -42,7 +43,7 @@
         <img src="backgrounds/Snapshoot Portfolio.svg" alt="">
       </div>
       <div class="projCont">
-        <div classtele="tonicCont">
+        <div class="tonicCont">
           <p class="tonicTitle">Tonic</p>
           <div class="canopyCont">
             <P class="canopy">CANOPY</P>
@@ -208,5 +209,55 @@
       </div>
     </div>
 </div>
+
+
+<!-- Popup Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content large-modal">
+    <span class="close-btn">&times;</span>
+    
+    <div class="modal-header">
+      <h2 class="modal-title">Tonic</h2>
+      <ul class="modal-meta">
+        <li>CANOPY</li>
+        <li>&bull;</li>
+        <li>Back End Dev</li>
+        <li>&bull;</li>
+        <li>2015</li>
+      </ul>
+    </div>
+
+    <img src="backgrounds/Snapshoot Portfolio.svg" alt="Nature Illustration" class="modal-image">
+
+    <div class="modal-body">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      </p>
+      <br>
+      <p>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+      </p>
+
+      <div class="modal-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Ruby</span>
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="modal-buttons">
+        <a href="#" class="modal-btn">See Live
+          <img src="icons/Icon - Export.svg">
+        </a>
+        <a href="#" class="modal-btn">See Source
+          <img src="icons/Icon -GitHub.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
+
 </html>

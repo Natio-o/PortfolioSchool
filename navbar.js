@@ -1,14 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const hamMenu = document.querySelector(".ham-menu");
-  const offscreenMenu = document.querySelector(".off-screen-menu");
+const modal = document.getElementById("projectModal");
+const btns = document.querySelectorAll(".seeProject");
+const closeBtn = document.querySelector(".close-btn");
 
-  if (hamMenu && offscreenMenu) {
-      hamMenu.addEventListener("click", () => {
-          hamMenu.classList.toggle("active");
-          offscreenMenu.classList.toggle("active");
-      });
-  } else {
-       
-      console.error("Ham menu or off-screen menu not found.");
-  }
+btns.forEach((btn) => {
+  btn.onclick = function () {
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+    window.scrollTo(0, 0);
+  };
 });
+
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+};
