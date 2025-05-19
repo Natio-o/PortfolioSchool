@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #F4F5F7;
 }
@@ -14,9 +18,10 @@ body{
   display: flex;
   justify-content: center;  
   align-items: center;
-  background: transparent;
+  background: #FFFFFF;
   top: 0;
   position: fixed;
+  z-index: 1000;
 }
 
 .navCont {
@@ -30,7 +35,18 @@ body{
   height: 40px;
   width: 258px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.navBut a{
+  text-decoration: none;
+  color: #172b4d;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: Poppins;
+  font-weight: 500;
+  font-family: 15px;
 }
 
 .navLogo{
@@ -38,14 +54,6 @@ body{
   font-weight: 700;
   font-size: 18px;
   color: #6070FF;
-}
-
-.navButton{
-  border: none;
-  background: none;
-  font-family: Poppins;
-  font-weight: 500;
-  font-family: 15px;
 }
 
 .header{
@@ -128,10 +136,10 @@ body{
   gap: 20px;
   width: 1156px;
   height: 496px;
-  border: solid .2px;
+  border: 1px solid #DFE1E6;
   border-radius: 25px;
-  border-color: #dcdcdc;
   background-color: #FFFFFF;
+  transition: 0.2s;
 }
 
 .projCont{
@@ -195,6 +203,10 @@ body{
   line-height: 24px;  
 }
 
+.tonicBody{
+  margin-bottom: 16px;
+}
+
 .tonicTags, .storiesTags, .facebookTags, .uberTags{
   display: flex;
   align-items: center;
@@ -202,6 +214,10 @@ body{
   margin-top: 5px;
   width: 203px;
   height: 24px;
+}
+
+.tonicTags {
+  margin-bottom: 16px; 
 }
 
 .tag{
@@ -234,6 +250,7 @@ body{
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 3%;
+  transition: .05s;
 }
 
 .stories{
@@ -243,10 +260,10 @@ body{
   gap: 20px;
   width: 1156px;
   height: 496px;
-  border: solid .2px;
+  border: 1px solid #DFE1E6;
   border-radius: 25px;
-  border-color: #dcdcdc;
   background-color: #FFFFFF;
+  transition: 0.2s;
 }
 
 .storiesTags{
@@ -263,10 +280,10 @@ body{
   gap: 20px;
   width: 1156px;
   height: 496px;
-  border: solid .2px;
+  border: 1px solid #DFE1E6;
   border-radius: 25px;
-  border-color: #dcdcdc;
   background-color: #FFFFFF;
+  transition: 0.2s;
 }
 
 .facebookTags{
@@ -282,10 +299,10 @@ body{
   gap: 20px;
   width: 1156px;
   height: 496px;
-  border: solid .2px;
+  border: 1px solid #DFE1E6;
   border-radius: 25px;
-  border-color: #dcdcdc;
   background-color: #FFFFFF;
+  transition: 0.2s;
 }
 
 .uberTags{
@@ -501,4 +518,68 @@ body{
 }
 input:focus, textarea:focus{
   outline: none;
+}
+
+/* hover and clicks*/
+
+.tonic:hover{  
+  border: 2px solid #A7AEFF;
+  transform: translateY(-8px);
+  box-shadow: 0px 48px 48px 0px #252F8914;
+  transition: 0.2s;
+}
+
+.stories:hover{  
+  border: 2px solid #A7AEFF;
+  transform: translateY(-8px);
+  box-shadow: 0px 48px 48px 0px #252F8914;
+  transition: 0.2s;
+}
+
+.facebook:hover{  
+  border: 2px solid #A7AEFF;
+  transform: translateY(-8px);
+  box-shadow: 0px 48px 48px 0px #252F8914;
+  transition: 0.2s;
+}
+
+.uber:hover{  
+  border: 2px solid #A7AEFF;
+  transform: translateY(-8px);
+  box-shadow: 0px 48px 48px 0px #252F8914;
+  transition: 0.2s;
+}
+
+.seeProject:hover{
+  background-color: #6070FF;
+  color: #FFFFFF;
+  box-shadow: 0px 8px 16px 0px #4053FC3D;
+  transition: .05s;
+}
+
+.resume:hover{
+  background-color: #6070FF;
+  color: #FFFFFF;
+  box-shadow: 0px 8px 16px 0px #4053FC3D;
+  transition: .05s;
+}
+
+.contactButton:hover{
+  background-color: #6070FF;
+  color: #FFFFFF;
+  box-shadow: 0px 8px 16px 0px #4053FC3D;
+  transition: .05s;
+  border: solid 1px #C1C7D0;
+}
+
+.seeProject:active{
+  background: #2230D2;
+}
+
+.resume:active{
+  background: #2230D2;
+}
+
+.contactButton:active{
+  background: #2230D2;
 }
